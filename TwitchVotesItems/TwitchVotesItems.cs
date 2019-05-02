@@ -27,7 +27,7 @@ namespace TwitchVotesItems
             On.RoR2.ChestBehavior.ItemDrop += ChestBehavior_ItemDrop;
             On.RoR2.ChestBehavior.Open += ChestBehavior_Open;
 
-            VoteDuration = ParseVoteDuration(Config.Wrap("Twitch", "VoteDuration", "Time your chat has to vote in milliseconds.", "20000").Value);
+            VoteDuration = ParseVoteDuration(Config.Wrap("Twitch", "VoteDuration", "Time your chat has to vote in milliseconds.", "10000").Value);
 
             DropItems = Config.Wrap(
                 "Twitch",
